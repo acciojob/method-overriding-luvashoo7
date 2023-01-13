@@ -1,8 +1,4 @@
 package com.driver;
-
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-
 public class Main {
     public static void main(String[] args) {
         B obj = new B();
@@ -16,8 +12,7 @@ public class Main {
     }
 
     public static class B extends A{
-        @Contract(pure = true)
-        public static @NotNull String meth(){
+        public static  String meth(){
             return "Method is overridden in Extendend class B";
         }
     }
